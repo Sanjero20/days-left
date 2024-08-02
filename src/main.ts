@@ -32,8 +32,8 @@ for (let i = month; i <= 11; i++) {
 remainingDays = remainingDays - day;
 
 // Display to screen
-const h1 = document.getElementById('date') as HTMLElement;
-const h2 = document.getElementById('remaining') as HTMLElement;
+const h1 = document.getElementById('remaining') as HTMLElement;
+const h2 = document.getElementById('date') as HTMLElement;
 
-h2.textContent = `${remainingDays} days left in this year`;
-h1.textContent = `${Months[month]} ${day}, ${year}`;
+h1.textContent = `There are ${remainingDays} days remaining`;
+h2.textContent = `as of ${Months[month]} ${day}, ${year}`;
